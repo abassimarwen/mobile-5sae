@@ -23,8 +23,10 @@ public class MainActivity extends AppCompatActivity {
         google = findViewById(R.id.google_button);
         tabLayout.addTab(tabLayout.newTab().setText("sign in"));
         tabLayout.addTab(tabLayout.newTab().setText("sign up"));
-        tabLayout.setTabGravity(tabLayout.GRAVITY_FILL);
+        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         final Adapter adapter = new Adapter(getSupportFragmentManager(),this,tabLayout.getTabCount());
-      //  viewPager.addOnAdapterChangeListener((ViewPager.OnAdapterChangeListener) new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+
+       // viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        viewPager.setAdapter(adapter);
     }
 }
