@@ -16,6 +16,11 @@
         android:title="fourniture scolaire"
         />
     <item
+        android:id="@+id/menu_clothes"
+        android:icon="@drawable/vetements"
+        android:title="clothes"
+        />
+    <item
         android:id="@+id/menu_meuble"
         android:icon="@drawable/meuble"
         android:title="meuble"
