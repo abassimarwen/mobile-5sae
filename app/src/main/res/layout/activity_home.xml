@@ -96,6 +96,7 @@
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:padding="10dp"
+                            android:checked="false"
                             android:src="@drawable/icons8_ruban_marque_page"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
