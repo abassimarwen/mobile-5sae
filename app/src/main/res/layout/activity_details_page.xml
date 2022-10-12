@@ -36,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:backgroundTint="@color/pink"
         android:text="See if it's available"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/pet_name"/>
@@ -60,14 +61,14 @@
         app:layout_constraintTop_toBottomOf="@id/pet_name"
         tools:text="description here\ndescription here\ndescription here\ndescription here\ndescription here\ndescription here\ndescription here\ndescription here\ " />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/thePriceOfPet"
         android:textColor="#FFF"
         android:layout_width="0dp"
         android:layout_margin="16dp"
         android:background="@drawable/button_bg"
         android:layout_height="wrap_content"
-        android:text="Add to cart"
+        android:text="contact owner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
