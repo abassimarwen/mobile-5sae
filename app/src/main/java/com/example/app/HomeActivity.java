@@ -1,12 +1,18 @@
 package com.example.app;
 
+
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.makeramen.RoundedImageView;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -40,5 +46,15 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         });
+      final TextView itemTitle = findViewById(R.id.item_title);
+      itemTitle.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              Intent intent = new Intent(getWindow().getContext(), DetailsPage.class);
+              getWindow().getContext().startActivity(intent);
+          }
+      });
+      //final RoundedImageView profileImage = findViewById(R.id.profile_image_on_header);
+
     }
 }

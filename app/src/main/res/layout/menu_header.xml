@@ -7,7 +7,7 @@
     android:id="@+id/header_menu">
 
     <com.makeramen.RoundedImageView
-        android:id="@+id/profile_image"
+        android:id="@+id/profile_image_on_header"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:scaleType="centerCrop"
@@ -19,12 +19,13 @@
         android:id="@+id/view_supporter"
         android:layout_width="1dp"
         android:layout_height="1dp"
-        app:layout_constraintBaseline_toBottomOf="@id/profile_image"
-        app:layout_constraintEnd_toEndOf="@id/profile_image"
-        app:layout_constraintEnd_toStartOf="@id/profile_image"
-        app:layout_constraintBaseline_toTopOf="@id/profile_image"/>
+        app:layout_constraintBaseline_toBottomOf="@id/profile_image_on_header"
+        app:layout_constraintEnd_toEndOf="@id/profile_image_on_header"
+        app:layout_constraintEnd_toStartOf="@id/profile_image_on_header"
+        app:layout_constraintBaseline_toTopOf="@id/profile_image_on_header"/>
 
     <TextView
+        android:id="@+id/profile_name_on_menu_header"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -33,7 +34,7 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@id/profile_image"
+        app:layout_constraintStart_toEndOf="@id/profile_image_on_header"
         app:layout_constraintTop_toBottomOf="@id/view_supporter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
