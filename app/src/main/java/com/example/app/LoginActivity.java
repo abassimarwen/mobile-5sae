@@ -8,7 +8,7 @@ import android.os.Bundle;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
-public class Login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
     ViewPager viewPager;
     TabLayout tabLayout;
     FloatingActionButton fb,twitter,google;
