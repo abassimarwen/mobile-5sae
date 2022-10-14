@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         final Adapter adapter = new Adapter(getSupportFragmentManager(),this,tabLayout.getTabCount());
 
-       // viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+      //  viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         viewPager.setAdapter(adapter);
     }
 }
