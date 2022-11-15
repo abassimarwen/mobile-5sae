@@ -7,11 +7,15 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
+
             <value value="C:\Users\LENOVO\.android\avd\Pixel_2_API_24.avd" />
+
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
+
     <timeTargetWasSelectedWithDropDown value="2022-11-15T20:40:20.597263900Z" />
+
   </component>
 </project>
