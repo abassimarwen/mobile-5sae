@@ -31,15 +31,15 @@ public class SigninController extends Fragment {
         signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              /*  Intent intent = new Intent(getContext(),HomeActivity.class);
-                getContext().startActivity(intent);*/
+               Intent intent = new Intent(getContext(),HomeActivity.class);
+                getContext().startActivity(intent);
 
-                User user = new User();
+               /* User user = new User();
                 EditText  edit_username = root.findViewById(R.id.editText_username);
                 EditText  edit_password = root.findViewById(R.id.editText_password);
                 user.setUserName(edit_username.getText().toString());
                 user.setUserName(edit_password.getText().toString());
-                database.userDao().insertOne(user);
+                database.userDao().insertOne(user);*/
             }
         });
         return root;
