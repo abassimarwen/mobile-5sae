@@ -1,31 +1,52 @@
 package com.example.app.entity;
 
-import androidx.room.Entity;
 
 
 
+
+
+import androidx.room.ColumnInfo;
+import androidx.room.PrimaryKey;
 
 import java.time.LocalDateTime;
-@Entity(tableName = "publication")
-public  class Publication {
+
+public abstract class Publication {
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name="id")
     private String id;
+    @ColumnInfo(name="title")
     private String title;
+    @ColumnInfo(name="description")
     private String description;
+    @ColumnInfo(name="image_url")
     private String imageUrl;
+    @ColumnInfo(name="created_at")
     private LocalDateTime createdAt;
+    @ColumnInfo(name="modified_at")
     private LocalDateTime modifiedAt;
+    @ColumnInfo(name= "publication_user")
+    private User user;
+    @ColumnInfo(name="publication_bookmark")
+    private Bookmark bookmark;
 
     public Publication() {
        
     }
 
-    public Publication(String id, String title, String description, String imageUrl, LocalDateTime createdAt, LocalDateTime modifiedAt) {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.imageUrl = imageUrl;
-        this.createdAt = createdAt;
-        this.modifiedAt = modifiedAt;
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Bookmark getBookmark() {
+        return bookmark;
+    }
+
+    public void setBookmark(Bookmark bookmark) {
+        this.bookmark = bookmark;
     }
 
     public String getId() {

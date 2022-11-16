@@ -4,7 +4,9 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "user_table")
+import java.util.Set;
+
+@Entity(tableName = "user")
 public class User {
     @PrimaryKey(autoGenerate = true)
     private int uid;
@@ -16,8 +18,18 @@ public class User {
     private String userName;
     @ColumnInfo(name = "password")
     private String password;
+    @ColumnInfo(name = "user_publications")
+    private Set<Publication> publications;
 
     public User() {}
+
+    public Set<Publication> getPublications() {
+        return publications;
+    }
+
+    public void setPublications(Set<Publication> publications) {
+        this.publications = publications;
+    }
 
     public int getUid() {
         return uid;
