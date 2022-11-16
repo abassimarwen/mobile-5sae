@@ -6,6 +6,13 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
+import com.example.app.dao.BookmarkDao;
+import com.example.app.dao.ClotheDao;
+import com.example.app.dao.FurnitureDao;
+import com.example.app.dao.PetDao;
+import com.example.app.dao.SchoolSuppliesDao;
+import com.example.app.dao.ToyDao;
+import com.example.app.dao.UserDao;
 import com.example.app.entity.Bookmark;
 import com.example.app.entity.Clothe;
 import com.example.app.entity.Furniture;
@@ -19,13 +26,13 @@ import com.example.app.entity.User;
         , exportSchema = false)
 public abstract class  AppDataBase extends RoomDatabase {
     private static AppDataBase instance;
-  /*  public abstract UserDao userDao();
+    public abstract UserDao userDao();
     public abstract BookmarkDao bookmarkDao();
     public abstract ClotheDao clotheDao();
     public abstract FurnitureDao furnitureDao();
     public abstract PetDao petDao();
     public abstract SchoolSuppliesDao schoolSuppliesDao();
-    public abstract ToyDao toyDao();*/
+    public abstract ToyDao toyDao();
     public static AppDataBase getAppDatabase(Context context) {
         if (instance == null) {
             instance = Room.databaseBuilder(context.getApplicationContext(), AppDataBase.class, "room_test_db")
