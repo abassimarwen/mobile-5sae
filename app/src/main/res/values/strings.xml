@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">app</string>
+    <string name="spin">publication type</string>
+    <string-array name="spinnerItems">
+        <item>toy</item>
+        <item>clothe</item>
+        <item>pet</item>
+        <item>school supplies</item>
+        <item>furniture</item>
+    </string-array>
 </resources>

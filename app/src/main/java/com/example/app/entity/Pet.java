@@ -2,9 +2,13 @@ package com.example.app.entity;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 @Entity(tableName = "pet")
 public class Pet extends Publication{
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name="id")
+    private Integer id;
     @ColumnInfo(name="pet_breed")
     private String breed;
     @ColumnInfo(name="pet_age")
@@ -14,6 +18,14 @@ public class Pet extends Publication{
 
     public Pet() {
         super();
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getBreed() {
@@ -39,4 +51,6 @@ public class Pet extends Publication{
     public void setKind(String kind) {
         this.kind = kind;
     }
+
+
 }
