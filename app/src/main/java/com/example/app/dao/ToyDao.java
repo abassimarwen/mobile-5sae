@@ -5,16 +5,17 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
-import com.example.app.entity.User;
+import com.example.app.entity.Toy;
+
 
 import java.util.List;
 
 @Dao
-public interface UserDao {
+public interface ToyDao {
     @Insert
-    void insertOne(User user);
+    void insertOne(Toy toy);
     @Delete
-    void delete(User user);
-    @Query("SELECT * FROM user")
-    List<User> getAll();
+    void delete(Toy toy);
+    @Query("SELECT * FROM toy")
+    List<Toy> getAll();
 }
