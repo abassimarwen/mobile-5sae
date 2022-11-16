@@ -5,16 +5,17 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
+import com.example.app.entity.Clothe;
 import com.example.app.entity.User;
 
 import java.util.List;
 
 @Dao
-public interface UserDao {
+public interface ClotheDao {
     @Insert
-    void insertOne(User user);
+    void insertOne(Clothe clothe);
     @Delete
-    void delete(User user);
-    @Query("SELECT * FROM user")
-    List<User> getAll();
+    void delete(Clothe clothe);
+    @Query("SELECT * FROM clothe")
+    List<Clothe> getAll();
 }
