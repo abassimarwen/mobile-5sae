@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toy_item"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp"
+    tools:layout_editor_absoluteX="160dp"
+    tools:layout_editor_absoluteY="168dp">
+
+    <LinearLayout
+        android:layout_width="418dp"
+        android:layout_height="129dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-24dp"
+        tools:layout_editor_absoluteY="-2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/setBackround"
+            android:layout_width="400dp"
+            android:layout_height="101dp"
+            android:backgroundTint="@color/pink"
+            android:background="@drawable/background_toys_item">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="80dp"
+                android:layout_height="0dp"
+                android:background="@drawable/end_view_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/item_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/icon_background"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/item_bookmark"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:checked="false"
+                android:padding="10dp"
+                android:src="@drawable/icons8_ruban_marque_page"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.996"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/item_title_toy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="80dp"
+                android:text="title"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/item_image"
+                app:layout_constraintTop_toTopOf="@id/item_image" />
+
+            <TextView
+                android:id="@+id/item_description_toy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="description description desc desc desc desc desc"
+                android:textColor="@color/color_light_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/item_title_toy"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/item_title_toy"
+
+                app:layout_constraintTop_toBottomOf="@id/item_title_toy"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/min_age"
+                android:layout_width="32dp"
+                android:layout_height="20dp"
+                app:layout_constraintEnd_toEndOf="@id/max_age"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                tools:layout_editor_absoluteY="72dp" />
+
+            <TextView
+                android:id="@+id/brand"
+                android:layout_width="71dp"
+                android:layout_height="25dp"
+
+                app:layout_constraintEnd_toStartOf="@+id/min_age"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/item_description_toy" />
+
+            <TextView
+                android:id="@+id/max_age"
+                android:layout_width="32dp"
+                android:layout_height="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.979"
+                app:layout_constraintStart_toStartOf="@+id/min_age"
+                tools:layout_editor_absoluteY="72dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

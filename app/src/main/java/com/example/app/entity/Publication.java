@@ -17,8 +17,8 @@ public abstract class Publication {
     private String title;
     @ColumnInfo(name="description")
     private String description;
-    @ColumnInfo(name="image_url")
-    private String imageUrl;
+  //  @ColumnInfo(name="image_url")
+   // private String imageUrl;
   /*  @ColumnInfo(name="created_at")
     private Date createdAt;
     @ColumnInfo(name="modified_at")
@@ -64,13 +64,13 @@ public abstract class Publication {
         this.description = description;
     }
 
-    public String getImageUrl() {
+  /*  public String getImageUrl() {
         return imageUrl;
     }
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
-    }
+    }*/
 
   /*  public Date getCreatedAt() {
         return createdAt;

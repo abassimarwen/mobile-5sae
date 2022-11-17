@@ -5,7 +5,7 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "furniture")
-public class Furniture {
+public class Furniture extends Publication {
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name="id")
     private Integer id;
