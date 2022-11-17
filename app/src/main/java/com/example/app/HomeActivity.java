@@ -16,15 +16,25 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.app.entity.User;
 import com.makeramen.RoundedImageView;
 
 public class HomeActivity extends AppCompatActivity {
+    private TextView tvUser;
+    private User user;
     Dialog myDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        /*********/
+        user = (User) getIntent().getSerializableExtra("User");
+        tvUser = findViewById(R.id.text);
+        if (user != null) {
+            tvUser.setText("WELCOME " + user.getUserName());
+        }
+        /*********/
         myDialog = new Dialog(this);
       final  DrawerLayout  drawerLayout = findViewById(R.id.homeDrawerLayout);
         findViewById(R.id.imageMenu).setOnClickListener(new View.OnClickListener() {

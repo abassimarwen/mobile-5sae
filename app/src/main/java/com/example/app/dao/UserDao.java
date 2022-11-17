@@ -11,10 +11,16 @@ import java.util.List;
 
 @Dao
 public interface UserDao {
+   // @Insert
+   // void insertOne(User user);
+    //@Delete
+    //void delete(User user);
+    //@Query("SELECT * FROM user")
+    //List<User> getAll();
+
+    @Query("SELECT * FROM User WHERE email = :email and password = :password")
+    User getUser(String email, String password);
+
     @Insert
-    void insertOne(User user);
-    @Delete
-    void delete(User user);
-    @Query("SELECT * FROM user")
-    List<User> getAll();
+    void insert(User user);
 }
