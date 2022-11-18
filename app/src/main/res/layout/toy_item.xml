@@ -25,7 +25,6 @@
             android:id="@+id/setBackround"
             android:layout_width="400dp"
             android:layout_height="101dp"
-            android:backgroundTint="@color/pink"
             android:background="@drawable/background_toys_item">
 
             <View
@@ -49,12 +48,12 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/item_bookmark"
+                android:id="@+id/item_delete"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:checked="false"
                 android:padding="10dp"
-                android:src="@drawable/icons8_ruban_marque_page"
+                android:src="@drawable/ic_baseline_delete_forever_24"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.996"

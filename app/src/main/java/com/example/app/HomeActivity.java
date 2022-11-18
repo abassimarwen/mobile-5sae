@@ -66,6 +66,7 @@ public class HomeActivity extends AppCompatActivity {
     List<Publication> publications = new ArrayList<>();
     RecyclerView rv ;
     PublicationAdapter adapter;
+    ImageView delete;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +80,14 @@ public class HomeActivity extends AppCompatActivity {
        rv=findViewById(R.id.items);
        rv.setAdapter(new PublicationAdapter(toys,this));
         rv.setLayoutManager(new LinearLayoutManager(this));
+      /*  delete =myDialog.findViewById(R.id.item_delete);
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                database.toyDao().delete(rv.);
+            }
+        });*/
+
 
 
         //db
